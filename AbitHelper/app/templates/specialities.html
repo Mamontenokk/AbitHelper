@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <form action="" method="post" id="speciality_form">
+        {{ form.specialities.label }}<br>
+        <select name="spec_select">
+            {% for choice in form.specialities.choices%}
+            <option value="{{ choice }}"{% if selection == choice %} selected="selected" {% endif %}>{{ choice }}</option>
+            {% endfor %}
+        </select><br>
+        {{ form.mark.label }}<br>
+        {{ form.mark(size=32) }}<br>
+        {% for error in form.mark.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+        <p> {{ form.submit() }} </p>
+    </form>
+
+
+    <script type="text/javascript">
+        $(function() {
+            $('a#calculate').bind('click', function() {
+              $.getJSON($SCRIPT_ROOT + '/_add_numbers', {
+                a: $('input[name="a"]').val(),
+                b: $('input[name="b"]').val()
+              }, function(data) {
+                $("#result").text(data.result);
+              });
+              return false;
+            });
+        });
+
+        
+    </script>
+
+
+    
+    
+        
+
+{% endblock %}

@@ -1,0 +1,100 @@
+2018-12-26 00:55:33,695 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 00:57:05,378 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:01:26,692 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:01:56,526 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:07:01,658 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:09:50,406 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:15:43,383 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:16:17,312 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:16:20,348 ERROR: Exception on /get_specialities/ [GET] [in c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_specialities() missing 1 required positional argument: 'choice'
+2018-12-26 01:16:40,289 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:20:30,289 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:26:10,477 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:26:16,521 ERROR: Exception on /get_specialities/ [POST] [in c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Admin\Desktop\1\py\AbitHelper\app\routes.py", line 32, in get_specialities
+    return render_template('specialities.html', title='Specialities', form=form, selection=option)
+UnboundLocalError: local variable 'option' referenced before assignment
+2018-12-26 01:27:02,158 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:29:56,873 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:30:06,706 ERROR: Exception on /get_specialities [GET] [in c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_specialities() missing 1 required positional argument: 'choice'
+2018-12-26 01:30:06,817 ERROR: Exception on /get_specialities [GET] [in c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: get_specialities() missing 1 required positional argument: 'choice'
+2018-12-26 01:31:23,163 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:34:28,212 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:35:09,815 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:35:58,806 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:36:32,663 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:37:38,256 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:37:43,635 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 01:37:47,899 ERROR: Exception on /get_specialities/ [POST] [in c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Admin\Desktop\1\py\AbitHelper\app\routes.py", line 27, in get_specialities
+    alert(option)
+NameError: name 'alert' is not defined
+2018-12-26 01:38:16,604 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
