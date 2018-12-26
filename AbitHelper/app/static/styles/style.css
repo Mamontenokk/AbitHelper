@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.header{
+	width:100%;
+	background-color: purple;
+	color: green;
+}
+
+div{
+	color:pink;
+}

@@ -1,0 +1,104 @@
+2018-12-26 02:05:05,803 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 02:07:12,325 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 02:18:43,589 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 02:18:46,945 ERROR: Exception on /get_specialities/23 [GET] [in c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Admin\Desktop\1\py\AbitHelper\app\routes.py", line 19, in get_specialities
+    with open('specialities.txt', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'specialities.txt'
+2018-12-26 02:21:26,779 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 02:21:29,867 ERROR: Exception on /get_specialities/23 [GET] [in c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Admin\Desktop\1\py\AbitHelper\app\routes.py", line 19, in get_specialities
+    with open(url_for('static',filename='data/specialities.txt'), 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/static/data/specialities.txt'
+2018-12-26 02:22:40,561 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 02:22:46,298 ERROR: Exception on /get_specialities/23 [GET] [in c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Admin\Desktop\1\py\AbitHelper\app\routes.py", line 21, in get_specialities
+    with open(url_for(path,filename='static/data/specialities.txt'), 'r') as f:
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\helpers.py", line 345, in url_for
+    force_external=external)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'C:\\Users\\Admin\\Desktop\\1\\py\\AbitHelper' with values ['filename']. Did you mean 'get_specialities' instead?
+2018-12-26 02:23:30,263 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 02:23:32,861 ERROR: Exception on /get_specialities/23 [GET] [in c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Admin\Desktop\1\py\AbitHelper\app\routes.py", line 21, in get_specialities
+    with open(os.join(path,'static','data','specialities.txt'), 'r') as f:
+AttributeError: module 'os' has no attribute 'join'
+2018-12-26 02:24:06,715 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 02:24:09,738 ERROR: Exception on /get_specialities/23 [GET] [in c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Admin\Desktop\1\py\AbitHelper\app\routes.py", line 21, in get_specialities
+    with open(os.path.join(path,'static','data','specialities.txt'), 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Admin\\Desktop\\1\\py\\AbitHelper\\static\\data\\specialities.txt'
+2018-12-26 02:25:07,270 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-26 02:25:45,516 INFO: Abithelper startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
