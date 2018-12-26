@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<!--link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}"-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<title>{{ title }}</title>
+	</head>
+	<body>
+		<div class="header">
+			<a href="#">Find job by criterias</a>
+			<a href="#">Browse list of jobs</a>
+			<a href="{{ url_for('get_specialities') }}">Find university by points</a>
+			<a href="#">Browse university lists</a>
+		</div>
+
+		{% block content %}{% endblock %}
+	</body>
+</html>

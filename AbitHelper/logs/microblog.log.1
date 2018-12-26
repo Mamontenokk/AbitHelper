@@ -1,0 +1,114 @@
+2018-12-20 22:46:11,075 ERROR: Exception on / [GET] [in c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Admin\Desktop\1\py\AbitHelper\app\routes.py", line 9, in index
+    return render_template('index.html', title='Home')
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2018-12-20 22:46:11,757 ERROR: Exception on / [GET] [in c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Admin\Desktop\1\py\AbitHelper\app\routes.py", line 9, in index
+    return render_template('index.html', title='Home')
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2018-12-20 22:47:19,054 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-20 22:47:21,358 ERROR: Exception on / [GET] [in c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Admin\Desktop\1\py\AbitHelper\app\routes.py", line 9, in index
+    return render_template('index.html', title='Home')
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Admin\Desktop\1\py\AbitHelper\app\templates\index.html", line 5, in template
+    {% endblock %}
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\parser.py", line 144, in parse_statement
+    self.fail_unknown_tag(token.value, token.lineno)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\parser.py", line 97, in fail_unknown_tag
+    return self._fail_ut_eof(name, self._end_token_stack, lineno)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'.
+2018-12-20 22:47:44,927 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-20 23:09:58,488 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]

@@ -1,0 +1,63 @@
+2018-12-20 23:11:36,170 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-20 23:16:10,101 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-20 23:16:47,134 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-20 23:18:31,795 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-20 23:19:45,993 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-20 23:21:25,416 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-20 23:23:23,250 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-20 23:24:58,064 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-20 23:30:24,731 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-20 23:31:11,578 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-20 23:33:23,329 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-20 23:33:27,589 ERROR: Exception on / [GET] [in c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Admin\Desktop\1\py\AbitHelper\app\routes.py", line 9, in index
+    return render_template('index.html', title='Home')
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Admin\Desktop\1\py\AbitHelper\app\templates\base.html", line 5, in template
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css')">
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 1005, in render
+    return concat(self.root_render_func(self.new_context(vars)))
+  File "C:\Users\Admin\Desktop\1\py\AbitHelper\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Admin\Desktop\1\py\AbitHelper\app\templates\base.html", line 5, in template
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css')">
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\parser.py", line 876, in subparse
+    self.stream.expect('variable_end')
+  File "c:\users\admin\appdata\local\programs\python\python37-32\lib\site-packages\jinja2\lexer.py", line 384, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got 'string'
+2018-12-20 23:33:45,760 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-20 23:34:34,201 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
+2018-12-20 23:35:08,376 INFO: Microblog startup [in C:\Users\Admin\Desktop\1\py\AbitHelper\app\__init__.py:24]
